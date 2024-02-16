@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 403976}
   - component: {fileID: 2058656}
-  - component: {fileID: 8156970}
   - component: {fileID: 9507824}
   - component: {fileID: 7013998523348207452}
-  - component: {fileID: -1729692555098768300}
+  - component: {fileID: 3886210322120589271}
   m_Layer: 0
   m_Name: CameraLoop
   m_TagString: MainCamera
@@ -87,14 +86,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8156970
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156470}
-  m_Enabled: 1
 --- !u!95 &9507824
 Animator:
   serializedVersion: 5
@@ -160,7 +151,7 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &-1729692555098768300
+--- !u!114 &3886210322120589271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
