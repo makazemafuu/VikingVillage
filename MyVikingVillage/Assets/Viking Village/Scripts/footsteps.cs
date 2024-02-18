@@ -36,7 +36,7 @@
 
 using UnityEngine;
 using System.Collections;
-
+using FMOD.Studio;
 //This script plays footstep sounds.
 //It will play a footstep sound after a set amount of distance travelled.
 //When playing a footstep sound, this script will cast a ray downwards. 
@@ -187,17 +187,17 @@ public class Footsteps : MonoBehaviour
             FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(m_EventPath);
             e.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
 
-            SetParameter(e, "Wood", m_Wood);
-            SetParameter(e, "Dirt", m_Dirt);
-            SetParameter(e, "Sand", m_Sand);
-            SetParameter(e, "Water", m_Water);
+            e.setParameterByName("Wood", m_Wood);
+            e.setParameterByName("Dirt", m_Wood);
+            e.setParameterByName("Sand", m_Wood);
+            e.setParameterByName("Water", m_Wood);
 
             e.start();
             e.release();//Release each event instance immediately, there are fire and forget, one-shot instances. 
         }
     }
 
-    void SetParameter(FMOD.Studio.EventInstance e, string name, float value)
+    /*void SetParameter(FMOD.Studio.EventInstance e, string name, float value)
     {
         FMOD.Studio.ParameterInstance parameter;
         e.getParameter(name, out parameter);
@@ -208,7 +208,7 @@ public class Footsteps : MonoBehaviour
             return;
         }
         parameter.setValue(value);
-    }
+    }*/
 
     int GetMaterialIndex(RaycastHit hit)
     {
