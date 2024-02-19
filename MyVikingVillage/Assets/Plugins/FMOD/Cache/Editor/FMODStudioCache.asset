@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 2300150306103767264}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 3512819837010687895}
   StringsBanks:
   - {fileID: 2731190305631745689}
-  cacheTime: 638439720376652249
+  cacheTime: 638439728381280574
   cacheVersion: 131616
 --- !u!114 &2300150306103767264
 MonoBehaviour:
@@ -69,10 +69,10 @@ MonoBehaviour:
     Village.bank
   Name: Viking Village
   StudioPath: bank:/Viking Village
-  lastModified: 638439720376652249
+  lastModified: 638439728381280574
   FileSizes:
   - Name: Desktop
-    Value: 866912
+    Value: 866560
   Exists: 1
 --- !u!114 &2731190305631745689
 MonoBehaviour:
