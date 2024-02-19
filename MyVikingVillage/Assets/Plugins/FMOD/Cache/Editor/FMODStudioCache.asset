@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5981806589610487053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Structure
+  m_EditorClassIdentifier: 
+  Path: event:/Structure
+  Guid:
+    Data1: -1816256179
+    Data2: 1089486605
+    Data3: -1458101861
+    Data4: 632038675
+  Banks:
+  - {fileID: 2300150306103767264}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38487
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,12 +45,13 @@ MonoBehaviour:
   - {fileID: 2300150306103767264}
   EditorEvents:
   - {fileID: 3285295576609981333}
+  - {fileID: -5981806589610487053}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3512819837010687895}
   StringsBanks:
   - {fileID: 2731190305631745689}
-  cacheTime: 638439505618312275
+  cacheTime: 638439720376652249
   cacheVersion: 131616
 --- !u!114 &2300150306103767264
 MonoBehaviour:
@@ -41,10 +69,10 @@ MonoBehaviour:
     Village.bank
   Name: Viking Village
   StudioPath: bank:/Viking Village
-  lastModified: 638439505618312275
+  lastModified: 638439720376652249
   FileSizes:
   - Name: Desktop
-    Value: 66272
+    Value: 866912
   Exists: 1
 --- !u!114 &2731190305631745689
 MonoBehaviour:
@@ -61,10 +89,10 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638439505617902057
+  lastModified: 638439709422736706
   FileSizes:
   - Name: Desktop
-    Value: 822
+    Value: 874
   Exists: 1
 --- !u!114 &3285295576609981333
 MonoBehaviour:
@@ -108,7 +136,7 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638439505617872055
+  lastModified: 638439709422706686
   FileSizes:
   - Name: Desktop
     Value: 1036
