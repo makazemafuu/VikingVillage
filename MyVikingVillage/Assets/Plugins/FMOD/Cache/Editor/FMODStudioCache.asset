@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 3512819837010687895}
   StringsBanks:
   - {fileID: 2731190305631745689}
-  cacheTime: 638438879839534410
+  cacheTime: 638439505618312275
   cacheVersion: 131616
 --- !u!114 &2300150306103767264
 MonoBehaviour:
@@ -41,10 +41,10 @@ MonoBehaviour:
     Village.bank
   Name: Viking Village
   StudioPath: bank:/Viking Village
-  lastModified: 638438879839534410
+  lastModified: 638439505618312275
   FileSizes:
   - Name: Desktop
-    Value: 65984
+    Value: 66272
   Exists: 1
 --- !u!114 &2731190305631745689
 MonoBehaviour:
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638438870758571349
+  lastModified: 638439505617902057
   FileSizes:
   - Name: Desktop
     Value: 822
@@ -80,14 +80,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Burning Torches
   Guid:
-    Data1: -1008520460
-    Data2: 1219809992
-    Data3: -342680645
-    Data4: -1907207062
+    Data1: 324241789
+    Data2: 1296498638
+    Data3: 137183405
+    Data4: -1261541378
   Banks:
   - {fileID: 2300150306103767264}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638438870758541341
+  lastModified: 638439505617872055
   FileSizes:
   - Name: Desktop
     Value: 1036
