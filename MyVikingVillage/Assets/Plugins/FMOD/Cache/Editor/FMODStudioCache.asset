@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5981806589610487053
+--- !u!114 &-7764137561990309476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Structure
+  m_Name: event:/Music
   m_EditorClassIdentifier: 
-  Path: event:/Structure
+  Path: event:/Music
   Guid:
-    Data1: -1816256179
-    Data2: 1089486605
-    Data3: -1458101861
-    Data4: 632038675
+    Data1: 1202018203
+    Data2: 1335108419
+    Data3: -1686408052
+    Data4: -1533359975
   Banks:
   - {fileID: 2300150306103767264}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 38487
+  Length: 106500
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,14 +44,16 @@ MonoBehaviour:
   - {fileID: 3512819837010687895}
   - {fileID: 2300150306103767264}
   EditorEvents:
-  - {fileID: 3285295576609981333}
-  - {fileID: -5981806589610487053}
+  - {fileID: 4730876685833867388}
+  - {fileID: 4538098283711136620}
+  - {fileID: 3949799113151747363}
+  - {fileID: -7764137561990309476}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3512819837010687895}
   StringsBanks:
   - {fileID: 2731190305631745689}
-  cacheTime: 638439728381280574
+  cacheTime: 638441120679552338
   cacheVersion: 131616
 --- !u!114 &2300150306103767264
 MonoBehaviour:
@@ -69,10 +71,10 @@ MonoBehaviour:
     Village.bank
   Name: Viking Village
   StudioPath: bank:/Viking Village
-  lastModified: 638439728381280574
+  lastModified: 638441120679552338
   FileSizes:
   - Name: Desktop
-    Value: 866560
+    Value: 16574304
   Exists: 1
 --- !u!114 &2731190305631745689
 MonoBehaviour:
@@ -89,12 +91,59 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638439709422736706
+  lastModified: 638441104940157711
   FileSizes:
   - Name: Desktop
-    Value: 874
+    Value: 946
   Exists: 1
---- !u!114 &3285295576609981333
+--- !u!114 &3512819837010687895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638441104940117704
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &3949799113151747363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ocean
+  m_EditorClassIdentifier: 
+  Path: event:/Ocean
+  Guid:
+    Data1: -532406785
+    Data2: 1140443491
+    Data3: -1717599052
+    Data4: 1435182629
+  Banks:
+  - {fileID: 2300150306103767264}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1176574
+--- !u!114 &4538098283711136620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +170,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5994
---- !u!114 &3512819837010687895
+--- !u!114 &4730876685833867388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,14 +179,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Structure
   m_EditorClassIdentifier: 
-  Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638439709422706686
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
+  Path: event:/Structure
+  Guid:
+    Data1: -1816256179
+    Data2: 1089486605
+    Data3: -1458101861
+    Data4: 632038675
+  Banks:
+  - {fileID: 2300150306103767264}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38487
