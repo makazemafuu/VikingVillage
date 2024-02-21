@@ -279,6 +279,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1763871035}
+    - targetCorrespondingSourceObject: {fileID: 192062, guid: 5f29f207d858fd245b7befaa18ea3284,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1763871036}
   m_SourcePrefab: {fileID: 100100000, guid: 5f29f207d858fd245b7befaa18ea3284, type: 3}
 --- !u!4 &3086686 stripped
 Transform:
@@ -26821,7 +26825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_Layer
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 11b6c022ca54ae4428be5a16a816c940, type: 3}
       propertyPath: m_IsActive
@@ -66985,10 +66989,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd9616652e46449448aaa9875161eb0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EventPath: 
-  m_Wood: 0
+  m_EventRef:
+    Guid:
+      Data1: 34118888
+      Data2: 1263085957
+      Data3: 1192914605
+      Data4: -49784605
+    Path: event:/Footsteps
+  m_Wood: 1
   m_Water: 0
-  m_Dirt: 0
+  m_Dirt: 1
   m_Sand: 0
   m_StepDistance: 2
   m_Debug: 0
@@ -67025,6 +67035,37 @@ MonoBehaviour:
       Data3: -1686408052
       Data4: -1533359975
     Path: event:/Music
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1763871036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763871027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 785800799
+      Data2: 1324722329
+      Data3: -974441064
+      Data4: -1401634009
+    Path: event:/Ambiance
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -68232,43 +68273,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1800636448}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1802193219
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1803708938
 PrefabInstance:
   m_ObjectHideFlags: 0

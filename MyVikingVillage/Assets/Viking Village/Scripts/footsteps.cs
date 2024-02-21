@@ -36,6 +36,7 @@
 
 using UnityEngine;
 using System.Collections;
+using FMODUnity;
 using FMOD.Studio;
 //This script plays footstep sounds.
 //It will play a footstep sound after a set amount of distance travelled.
@@ -47,8 +48,9 @@ public class Footsteps : MonoBehaviour
     //FMOD Studio variables
     //The FMOD Studio Event path.
     //This script is designed for use with an event that has a game parameter for each of the surface variables, but it will still compile and run if they are not present.
-    [FMODUnity.EventRef]
-    public string m_EventPath;
+    //[FMODUnity.EventRef]
+   // public string m_EventPath;
+    public EventReference m_EventRef;
 
     //Surface variables
     //Range: 0.0f - 1.0f
@@ -173,7 +175,7 @@ public class Footsteps : MonoBehaviour
             else//If the ray hits somethign other than the ground, we assume it hit a wooden prop (This is specific to the Viking Village scene) - and set the parameter values for wood.
             {
                 m_Water = 0.0f;
-                m_Dirt = 0.0f;
+                m_Dirt = 1.0f;
                 m_Sand = 0.0f;
                 m_Wood = 1.0f;
             }
@@ -182,13 +184,13 @@ public class Footsteps : MonoBehaviour
         if (m_Debug)
             Debug.Log("Wood: " + m_Wood + " Dirt: " + m_Dirt + " Sand: " + m_Sand + " Water: " + m_Water);
 
-        if (m_EventPath != null)
+        if (!m_EventRef.IsNull)
         {
-            FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(m_EventPath);
+            FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(m_EventRef);
             e.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
 
             e.setParameterByName("Wood", m_Wood);
-            e.setParameterByName("Dirt", m_Wood);
+            e.setParameterByName("Grass", m_Dirt);
             e.setParameterByName("Sand", m_Wood);
             e.setParameterByName("Water", m_Wood);
 
@@ -196,6 +198,8 @@ public class Footsteps : MonoBehaviour
             e.release();//Release each event instance immediately, there are fire and forget, one-shot instances. 
         }
     }
+
+
 
     /*void SetParameter(FMOD.Studio.EventInstance e, string name, float value)
     {

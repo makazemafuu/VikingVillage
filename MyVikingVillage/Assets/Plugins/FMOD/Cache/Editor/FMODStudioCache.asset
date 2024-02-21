@@ -27,6 +27,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 106500
+--- !u!114 &-3026802005971255293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Grass
+  m_EditorClassIdentifier: 
+  Name: Grass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 671097854
+    data2: 1043896126
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,13 +72,69 @@ MonoBehaviour:
   - {fileID: 4538098283711136620}
   - {fileID: 3949799113151747363}
   - {fileID: -7764137561990309476}
+  - {fileID: 3733649494415697062}
+  - {fileID: 1929967390767776087}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3512819837010687895}
   StringsBanks:
   - {fileID: 2731190305631745689}
-  cacheTime: 638441120679552338
+  cacheTime: 638441299727528960
   cacheVersion: 131616
+--- !u!114 &397756973139003133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Wood
+  m_EditorClassIdentifier: 
+  Name: Wood
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 320283290
+    data2: 3795711556
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1929967390767776087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps
+  Guid:
+    Data1: 34118888
+    Data2: 1263085957
+    Data3: 1192914605
+    Data4: -49784605
+  Banks:
+  - {fileID: 3512819837010687895}
+  - {fileID: 2300150306103767264}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3026802005971255293}
+  - {fileID: 397756973139003133}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18000
 --- !u!114 &2300150306103767264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,10 +151,10 @@ MonoBehaviour:
     Village.bank
   Name: Viking Village
   StudioPath: bank:/Viking Village
-  lastModified: 638441120679552338
+  lastModified: 638441299727528960
   FileSizes:
   - Name: Desktop
-    Value: 16574304
+    Value: 19940320
   Exists: 1
 --- !u!114 &2731190305631745689
 MonoBehaviour:
@@ -91,10 +171,10 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638441104940157711
+  lastModified: 638441299725872778
   FileSizes:
   - Name: Desktop
-    Value: 946
+    Value: 1118
   Exists: 1
 --- !u!114 &3512819837010687895
 MonoBehaviour:
@@ -111,11 +191,38 @@ MonoBehaviour:
   Path: C:/Users/Utilisateur/OneDrive/Documents/FMOD Studio/projects/audio-system-fmod-project-viking-village/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638441104940117704
+  lastModified: 638441299725832770
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 30560
   Exists: 1
+--- !u!114 &3733649494415697062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance
+  Guid:
+    Data1: 785800799
+    Data2: 1324722329
+    Data3: -974441064
+    Data4: -1401634009
+  Banks:
+  - {fileID: 2300150306103767264}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 67018
 --- !u!114 &3949799113151747363
 MonoBehaviour:
   m_ObjectHideFlags: 0
